@@ -1,6 +1,6 @@
 # poster.rb: make a poster.
 #
-# Time-stamp: <2025-04-04 15:33:44 (mkmcc)>
+# Time-stamp: <2025-04-04 18:52:13 (mkmcc)>
 #
 # Style:
 #   1. the parameters in enter_page control the layout.  these are:
@@ -30,6 +30,9 @@ class MyPlots
     @figure_maker = FigureMaker.default
 
     enter_page
+
+    t.tex_preview_preamble += \
+    "\n\t\\usepackage[onlymath,medfamily,opticals]{MinionPro}\n"
 
     t.tex_preview_preamble += \
     "\n\t\\usepackage{CaslonPro}\n"
@@ -190,7 +193,7 @@ class MyPlots
                 'justification' => RIGHT_JUSTIFIED,
                 'color'         => @title_text_color)
 
-    refs = '\textbf{McCourt et al. (2012)}, Sharma et al. (2012a,b), Parrish et al. (2008)'
+    refs = '\textbf{McCourt et al. (2012)}, Sharma et al. (2012a,b), McBride et al. (2009), Parrish et al. (2008)'
 
     refs = "\\fontsize{12}{12}\\selectfont \\textit{#{refs}}"
 
@@ -331,9 +334,9 @@ class MyPlots
     center --- this result is significant because it renders clusters
     unstable to a powerful convective instability known as the
     \\textit{magnetothermal instability,} or \\textsc{mti}.  This
-    result is also surprising, given that thermal conduction and
-    convection should erase such temperature gradients, and have
-    plenty of time to do so within the age of the universe."
+    result is also very surprising however, given that thermal
+    conduction and convection should erase such temperature gradients,
+    and have plenty of time to do so within the age of the universe."
 
 
     example_text = example_text + "\\\\*[2ex] \n\n" \
@@ -363,98 +366,104 @@ class MyPlots
 
 
     # Method
-    t.show_text('text'          => section_fmt('Entropy Generation'),
+    t.show_text('text'          => section_fmt('Entropy Generation at the'),
                 'at'            => [0.98, 0.35],
                 'alignment'     => ALIGNED_AT_BASELINE,
                 'justification' => RIGHT_JUSTIFIED,
                 'color'         => @section_text_color)
 
-    t.show_text('text'          => section_fmt('at the Virial Shock'),
+    t.show_text('text'          => section_fmt('Virial Shock'),
                 'at'            => [0.98, 0.34],
                 'alignment'     => ALIGNED_AT_TOP,
                 'justification' => RIGHT_JUSTIFIED,
                 'color'         => @section_text_color)
 
-    example_text = wrap_image('figures/accretion.pdf', 7)
+    example_text = wrap_image('figures/accretion.pdf', 10)
 
-    example_text = example_text + "We use the MHD code
-    \\textsf{Athena}, modified to implement anisotropic thermal
-    conduction: $Q_{\\mathrm{cond}} = - \\kappa \\hat{b}
-    (\\hat{b}\\cdot\\nabla T)$. \\\\*[2ex] \n The conductivity takes
-    this form because the electron mean free path in the ICM is much
-    longer than its gyroradius.  The electrons (which transport most
-    of the energy) are thus confined to move along magnetic field
-    lines."
+    example_text = example_text + "We build a simple, spherically
+    symmetric model to study how galaxy clusters develop large-scale
+    temperature gradients. Our approach includes the key effects of
+    \\textit{Cosmological Accretion}, \\textit{Hydrostatic
+    Equilibrium}, and \\textit{Thermal Conduction}.  This model allows
+    us to explore how conduction, halo growth, and accretion shocks
+    shape the ICM temperature structure over time --- without relying
+    on opaque and computationally expensive simulations."
 
     t.show_text('text'          => minipage(example_text, 0.96),
-                'at'            => [0.02, 0.28],
+                'at'            => [0.02, 0.29],
                 'alignment'     => ALIGNED_AT_TOP,
                 'justification' => LEFT_JUSTIFIED)
 
 
-    # t.show_text('text'          => minipage(example_text, 0.96),
-    #             'at'            => [0.02, 0.0],
-    #             'alignment'     => ALIGNED_AT_BOTTOM,
-    #             'justification' => LEFT_JUSTIFIED)
-
-    grid
+    # grid
   end
 
   def second_col
     # saturation plot
-    t.show_text('text'          => section_fmt('Results'),
-                'at'            => [0.98, 1.00],
+    t.show_text('text'          => section_fmt('Numerical Method'),
+                'at'            => [0.98, 1.01],
                 'alignment'     => ALIGNED_AT_TOP,
                 'justification' => RIGHT_JUSTIFIED,
                 'color'         => @section_text_color,
                 'angle' => 0.0 * atan(2*@top_tilt*@head_height) * 180/3.1416 * 0.5)
 
-    # example_text = "\\textsc{The hbi and mti} are convective
-    # instabilities driven by \\textit{anisotropic} thermal conduction
-    # in plasmas.  Electrons move freely along magnetic field lines,
-    # redistribute energy and buoyantly destabilize vertically displaced
-    # fluid elements.  Perturbations grow with the local dynamical time
-    # $t_{\\mathrm{HBI}} \\sim t_{\\mathrm{dyn}} \\sim
-    # \\sqrt{H/g}$. \\\\*[2ex] \n {\\footnotesize (color shows the
-    # plasma temperature and lines trace the magnetic field.)}
-    # \\\\*[2ex] \n"
+    example_text = "We model Lagrangian shells of gas and dark matter,
+    centered on the location of the cluster.  Shells initially expand
+    from the \\textit{Big Bang}, decelerate, and turn around due to
+    gravity.  When they fall in towards the cluster, the dark matter
+    virializes via shell-crossing, and the gas thermalizes in a
+    shock."
 
-    # example_text = wrap_image('plots/buoyancy_schematic', 10) + example_text
+    example_text = example_text + "\\\\*[2ex]" + image("figures/cluster-formation-model-2.pdf", 0.96)
 
-    # example_text = example_text + image('plots/hbi_5panel', 0.96)
+    example_text = example_text + "\\\\*[2ex]" + "Inside the virial
+    radius, the gas is in hydrostatic equilibrium and the dark matter
+    follows an \\textsc{nfw} profile.  Outside the shock radius, we
+    simply have cosmological conditions."
 
-    # example_text = example_text + "\\\\*[2ex] \n The HBI saturates
-    # quiescently by reorienting the magnetic field lines.  This
-    # insulates the plasma against a conductive heat flux, and may
-    # exascerbate the cooling flow problem. \\\\*[2ex] \n"
+    example_text = example_text + "\\\\*[2ex]" + "Between the shock
+    radius and the virial radius, however, the dynamics have not had
+    time to equilibrate.  We model this region with a 1\\textsc{d}
+    time-dependent Lagrangian numerical calculation."
 
-    # example_text = example_text + image('plots/mti_5panel_h', 0.96)
+    t.show_text('text'          => minipage(example_text, 0.96),
+                'at'            => [0.02, 0.965],
+                'alignment'     => ALIGNED_AT_TOP,
+                'justification' => LEFT_JUSTIFIED)
 
-    # example_text = example_text + "\\\\*[2ex] \n Though the linear
-    # behavior of the MTI is similar to that of the HBI, its nonlinear
-    # behavior is entirely different.  The MTI does not reorient the
-    # field lines and in fact drives strong, $\\sim$~sonic turbulence."
 
-    # t.show_text('text'          => minipage(example_text, 0.96),
-    #             'at'            => [0.98, 0.95],
-    #             'alignment'     => ALIGNED_AT_TOP,
-    #             'justification' => RIGHT_JUSTIFIED)
+    t.show_text('text'          => section_fmt('Results'),
+                'at'            => [0.98, 0.5],
+                'alignment'     => ALIGNED_AT_TOP,
+                'justification' => RIGHT_JUSTIFIED,
+                'color'         => @section_text_color,
+                'angle' => 0.0 * atan(2*@top_tilt*@head_height) * 180/3.1416 * 0.5)
 
-    # t.show_text('text'          => image('plots/mti_5panel_v', 0.5),
-    #             'at'            => [0.02, 0.0],
-    #             'alignment'     => ALIGNED_AT_BOTTOM,
-    #             'justification' => LEFT_JUSTIFIED)
+    example_text = wrap_image("figures/temp-profiles-iso-talk.pdf", 10)
 
-    # example_text = "\\footnotesize The MTI generates turbulence even if
-    # the magnetic field lines are initially vertical -- though this
-    # state is linearly stable, it is nonlinearly unstable."
+    example_text = example_text + "In the case of an isothermal
+    potential, this is a simple problem: the temperature at the center
+    matches the virial temperature, and the temperature in the
+    outskirts is determined by jump conditions at the shock.  The
+    global temperature gradient is thus determined by the accretion
+    rate $t_{\\text{dyn}} d \\ln M / d t$."
 
-    # t.show_text('text' => minipage(example_text, 0.45),
-    #             'at' => [0.98, 0.0],
-    #             'alignment' => ALIGNED_AT_BOTTOM,
-    #             'justification' => RIGHT_JUSTIFIED)
+    example_text = example_text + "\\\\*[1ex]" + image('figures/conduction-temp-mach-talk-2.pdf', 0.96)
 
-    grid
+    t.show_text('text'          => minipage(example_text, 0.96),
+                'at'            => [0.02, 0.46],
+                'alignment'     => ALIGNED_AT_TOP,
+                'justification' => LEFT_JUSTIFIED)
+
+
+    example_text = "Results from the
+    full calculation agree closely with observations."
+
+    t.show_text('text'          => minipage(example_text, 0.96),
+                'at'            => [0.02, 0.005],
+                'alignment'     => ALIGNED_AT_BASELINE,
+                'justification' => LEFT_JUSTIFIED)
+    # grid
   end
 
 end
