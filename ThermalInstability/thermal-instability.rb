@@ -1,6 +1,6 @@
 # poster.rb: make a poster.
 #
-# Time-stamp: <2025-04-12 15:38:15 (mkmcc)>
+# Time-stamp: <2025-04-12 16:12:58 (mkmcc)>
 #
 # Style:
 #   1. the parameters in enter_page control the layout.  these are:
@@ -42,6 +42,9 @@ class MyPlots
 
     t.tex_preview_preamble += \
     "\n\t\\usepackage{wrapfig}\n"
+
+    t.tex_preview_preamble += \
+    "\n\t\\usepackage{enumitem}\n"
 
     t.tex_preview_preamble += "\n\t\\usepackage[stretch=30,shrink=30]{microtype}\n"
 
@@ -342,29 +345,31 @@ class MyPlots
 
 
     t.show_text('text'          => section_fmt('Overview'),
-                'at'            => [0.98, 0.5],
+                'at'            => [0.98, 0.45],
                 'alignment'     => ALIGNED_AT_TOP,
                 'justification' => RIGHT_JUSTIFIED,
                 'color'         => @section_text_color)
 
-    example_text = "\\begin{itemize} \n \\item Assuming that the ICM
-    in galaxy groups and clusters is globally stabilized by heating,
-    it is \\textit{locally thermally unstable}.  This is true even if
-    thermal conduction is rapid.  \n \\item The non-linear saturation
-    of thermal instability is controlled by the ratio of the cooling
-    time to the free-fall time.  The instability produces multi-phase
-    gas only when $t_{\\mathrm{cool}}/t_{\\mathrm{ff}}\\lesssim 10$ \n
-    \\item If thermal instability powers AGN feedback, halos should
-    self-regulate to the critical threshold for non-linear stability:
-    $t_{\\mathrm{cool}}/t_{\\mathrm{ff}}\\sim 10$.  In practice, this
-    introduces a density ``core'' and explains the observed deviations
-    from gravitational self-similarity \\end{itemize}"
+    example_text = "\\begin{itemize}[leftmargin=*] \n" \
+    + " \\item \\textbf{Globally stable, locally unstable:} Even when
+    the intracluster medium (\\textsc{icm}) is globally heated and
+    stable, it can be \\texted{locally unstable}.\n"\
+    + "\\item \\textbf{Nonlinear outcome depends on cooling vs.\\
+    gravity:} The instability only grows if cooling outpaces infall:
+    $t_{\\mathrm{cool}}/t_{\\mathrm{ff}}\\lesssim 10$ \n"\
+    + " \\item \\textbf{AGN feedback and thermal regulation:} If cold
+    gas fuels black hole activity, this instability acts as a
+    \\textbf{thermostat}, keeping the halo close to the critical
+    threshold.  This introduces a density ``core'' and explains the
+    observed deviations from self-similarity.\n"\
+    + "\\end{itemize}"
 
+    # ornaments: 0, 12, 20, 24
     example_text = "\\renewcommand{\\labelitemi}{\\ornament{24}}"\
     +minipage(example_text, 0.96)
 
     t.show_text('text'          => example_text,
-                'at'            => [0.02, 0.0],
+                'at'            => [0.02, 0.025],
                 'alignment'     => ALIGNED_AT_BOTTOM,
                 'justification' => LEFT_JUSTIFIED)
 
@@ -385,7 +390,7 @@ class MyPlots
     exponentially, but saturate at an amplitude which depends on the
     ratio of the cooling time to the free-fall time
     $t_{\\mathrm{cool}}/t_{\\mathrm{ff}}$.  This amplitude can be > 1
-    or < 1.  Thus, \\textbf{\\textit{linear thermal instability need
+    or < 1.  Thus, even exponentially-growing \\textbf{\\textit{linear instability need
     not produce multi-phase gas}}. \\\\*[2ex] \n Intuitively, the
     instability stops when the infall time for an over-dense blob
     approaches its cooling time---shear instabilities then develop on
