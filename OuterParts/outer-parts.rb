@@ -1,6 +1,6 @@
 # poster.rb: make a poster.
 #
-# Time-stamp: <2025-04-12 13:00:51 (mkmcc)>
+# Time-stamp: <2025-04-12 16:41:53 (mkmcc)>
 #
 # Style:
 #   1. the parameters in enter_page control the layout.  these are:
@@ -30,6 +30,8 @@ class MyPlots
     @figure_maker = FigureMaker.default
 
     enter_page
+
+    # t.autocleanup = false
 
     t.tex_preview_preamble += \
     "\n\t\\usepackage[onlymath,medfamily,opticals]{MinionPro}\n"
@@ -366,17 +368,18 @@ class MyPlots
 
 
     # Method
-    t.show_text('text'          => section_fmt('Entropy Generation at the'),
-                'at'            => [0.98, 0.35],
-                'alignment'     => ALIGNED_AT_BASELINE,
-                'justification' => RIGHT_JUSTIFIED,
-                'color'         => @section_text_color)
+    rgb = @section_text_color.join(",")
+    example_text = "{\\color{mytempcolor} Entropy Generation at the Virial Shock}"
+    example_text = section_fmt("\\raggedleft #{example_text} \\par")
+    example_text = minipage(example_text, 0.7)
 
-    t.show_text('text'          => section_fmt('Virial Shock'),
-                'at'            => [0.98, 0.34],
+    example_text = "\\definecolor{mytempcolor}{rgb}{#{rgb}} " + example_text
+
+    t.show_text('text'          => example_text,
+                'at'            => [0.98, 0.37],
                 'alignment'     => ALIGNED_AT_TOP,
-                'justification' => RIGHT_JUSTIFIED,
-                'color'         => @section_text_color)
+                'justification' => RIGHT_JUSTIFIED)
+
 
     example_text = wrap_image('figures/accretion.pdf', 10)
 
