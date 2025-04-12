@@ -1,6 +1,6 @@
 # poster.rb: make a poster.
 #
-# Time-stamp: <2012-08-04 23:31:21 (mkmccjr)>
+# Time-stamp: <2025-04-12 15:38:15 (mkmcc)>
 #
 # Style:
 #   1. the parameters in enter_page control the layout.  these are:
@@ -312,30 +312,25 @@ class MyPlots
                 'justification' => RIGHT_JUSTIFIED,
                 'color'         => @section_text_color)
 
-    example_text = "\\textsc{To be, or not to be}, that is the
-   question: Whether 'tis Nobler in the mind to suffer The Slings and
-   Arrows of outrageous Fortune, Or to take Arms against a Sea of
-   troubles, And by opposing end them: to die, to sleep No more; and
-   by a sleep, to say we end The heart-ache, and the thousand Natural
-   shocks That Flesh is heir to?  'Tis a consummation Devoutly to be
-   wished. To die to sleep, To sleep, perchance to Dream; Ay, there's
-   the rub, For in that sleep of death, what dreams may come, When we
-   have shuffled off this mortal coil, Must give us pause. There's the
-   respect That makes Calamity of so long life: For who would bear the
-   Whips and Scorns of time, The Oppressor's wrong, the proud man's
-   Contumely,"
+    example_text = "\\textsc{Some galaxy clusters} contain long, thin
+    \\textbf{\\textit{filaments of cold gas}} embedded in an otherwise hot
+    plasma---a surprising phenomenon, since cold gas should quickly
+    heat up and evaporate."
 
-   # "The pangs of despised Love, the Law's delay, The insolence of
-   # Office, and the Spurns That patient merit of the unworthy takes,
-   # When he himself might his Quietus make With a bare Bodkin? Who
-   # would Fardels bear, To grunt and sweat under a weary life, But that
-   # the dread of something after death, The undiscovered Country, from
-   # whose bourn No Traveller returns, Puzzles the will, And makes us
-   # rather bear those ills we have, Than fly to others that we know not
-   # of.  Thus Conscience does make Cowards of us all, And thus the
-   # Native hue of Resolution Is sicklied o'er, with the pale cast of
-   # Thought, And enterprises of great pitch and moment, With this
-   # regard their Currents turn awry, And lose the name of Action. "
+    example_text = example_text + "\\\\*[2ex] \n" + "We explore how
+    \\textbf{\\textit{thermal instability}}---a runaway cooling
+    process---can generate and sustain these cold structures within
+    hot halos.  Crucially, we find that this process only occurs in
+    regions where \\textbf{\\textit{cooling beats gravity:}} the
+    instability develops only when the \\textit{cooling time drops
+    below the free-fall time}, or when $t_{\\mathrm{cool}} /
+    t_{\\mathrm{ff}} \\lesssim 10$."
+
+    example_text = example_text + "\\\\*[2ex] \n" + "This threshold
+    not only explains when and where cold gas forms, but may also
+    \\textbf{regulate feedback} from black holes in cluster
+    centers---helping to control the structure and evolution of massive
+    galaxies."
 
     example_text = minipage(example_text, 0.96)
 

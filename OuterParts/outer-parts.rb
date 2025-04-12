@@ -1,6 +1,6 @@
 # poster.rb: make a poster.
 #
-# Time-stamp: <2025-04-04 18:52:13 (mkmcc)>
+# Time-stamp: <2025-04-12 13:00:51 (mkmcc)>
 #
 # Style:
 #   1. the parameters in enter_page control the layout.  these are:
@@ -386,8 +386,8 @@ class MyPlots
     \\textit{Cosmological Accretion}, \\textit{Hydrostatic
     Equilibrium}, and \\textit{Thermal Conduction}.  This model allows
     us to explore how conduction, halo growth, and accretion shocks
-    shape the ICM temperature structure over time --- without relying
-    on opaque and computationally expensive simulations."
+    shape the \textsc{icm} temperature structure over time --- without
+    relying on opaque and computationally expensive simulations."
 
     t.show_text('text'          => minipage(example_text, 0.96),
                 'at'            => [0.02, 0.29],
