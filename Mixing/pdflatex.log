@@ -1,0 +1,116 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./mixing.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size10.clo))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/dvipsnam.def)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/ragged2e/ragged2e.sty)
+(/Users/mkmcc/Library/texmf/tex/latex/MinionPro/MinionPro.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty))
+(/Users/mkmcc/Library/texmf/tex/latex/MinionPro/MinionPro-FontDef.sty
+(/Users/mkmcc/Library/texmf/tex/latex/MinionPro/otfontdef.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/fltpoint/fltpoint.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/fltpoint/fltpoint.tex)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/mnsymbol/MnSymbol.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/eufrak.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/fontaxes/fontaxes.sty))
+(/Users/mkmcc/Library/texmf/tex/latex/FuturaStd/FuturaStd.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/ly1/ly1enc.def
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/ly1enc.dfu))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/ly1/ly1ptm.fd)
+
+LaTeX Font Warning: Font shape `LY1/cmr/m/n' undefined
+(Font)              using `LY1/ptm/m/n' instead on input line 116.
+
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex))))
+(/Users/mkmcc/Library/texmf/tex/latex/WarnockPro/WarnockPro.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+(/Users/mkmcc/Library/texmf/tex/latex/FuturaStd/ly1futurastd-tlf.fd))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/wrapfig/wrapfig.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/calc.sty)
+(/Users/mkmcc/Library/texmf/tex/latex/WarnockPro/ly1warnockpro-osf.fd)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(./mixing.aux)
+(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+*geometry* detected driver: pdftex
+(./mixing_figure.txt
+! Misplaced alignment tab character &.
+<argument> ...net, Mike McCourt, Eliot Quataert, &
+                                                   Ryan O'Leary
+l.5 ...urt, Eliot Quataert, & Ryan O'Leary}}}}}}}}
+                                                  
+
+Overfull \hbox (2.39967pt too wide) in paragraph at lines 29--29
+[][] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+
+(/Users/mkmcc/Library/texmf/tex/latex/MinionPro/t1minionpro-osf.fd
+(/Users/mkmcc/Library/texmf/tex/latex/MinionPro/MinionPro-FontDef.sty))
+(/Users/mkmcc/Library/texmf/tex/latex/MinionPro/mt-MinionPro.cfg)
+(/Users/mkmcc/Library/texmf/tex/latex/MinionPro/omlminionpro-tosf.fd
+(/Users/mkmcc/Library/texmf/tex/latex/MinionPro/MinionPro-FontDef.sty))
+Overfull \hbox (3.37057pt too wide) in paragraph at lines 43--43
+[][] 
+
+Overfull \hbox (5.79485pt too wide) in paragraph at lines 90--90
+[][] 
+)
+Overfull \hbox (2.22836pt too wide) in paragraph at lines 418--419
+[] 
+
+[1{/Users/mkmcc/Library/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.m
+ap}{/Users/mkmcc/Library/texmf/fonts/enc/dvips/WarnockPro/a_3b5zbd.enc}{/Users/
+mkmcc/Library/texmf/fonts/enc/dvips/WarnockPro/a_oh2awu.enc} <./mixing_figure.p
+df> <./figures/kh-1.png> <./figures/kelvin-highres.png> <./figures/kelvin-highr
+es-late.png> <./figures/drat-early.png> <./figures/nodiff.png>] (./mixing.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+(see the transcript file for additional information)</Users/mkmcc/Library/texmf
+/fonts/type1/lcdftools/WarnockPro/WarnockPro-Bold.pfb></Users/mkmcc/Library/tex
+mf/fonts/type1/lcdftools/WarnockPro/WarnockPro-BoldDisp.pfb></Users/mkmcc/Libra
+ry/texmf/fonts/type1/lcdftools/WarnockPro/WarnockPro-BoldIt.pfb></Users/mkmcc/L
+ibrary/texmf/fonts/type1/lcdftools/WarnockPro/WarnockPro-BoldSubh.pfb></Users/m
+kmcc/Library/texmf/fonts/type1/lcdftools/WarnockPro/WarnockPro-It.pfb></Users/m
+kmcc/Library/texmf/fonts/type1/lcdftools/WarnockPro/WarnockPro-ItSubh.pfb></Use
+rs/mkmcc/Library/texmf/fonts/type1/lcdftools/WarnockPro/WarnockPro-Regular.pfb>
+
+Output written on mixing.pdf (1 page, 1672246 bytes).
+Transcript written on mixing.log.

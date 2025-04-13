@@ -1,0 +1,91 @@
+\setlength{\unitlength}{0.100000bp}%
+\begin{picture}(7919,6119)(00,0)          % (width,height)(xoffset,yoffset) -- Adjust the 2nd pair for registration adjustments
+\def\BS{\phantom{\Huge\scalebox{0}[2]{\hbox{\rotatebox{180}{O}O}}}}
+\put(79,5980){\scalebox{1.00}{\makebox(0,0)[lt]{{{\tiogasetfont{}\textcolor[rgb]{0.70,0.13,0.13}{\fontsize{36}{36}\selectfont\textbf{ Mixing and the Mirage of Convergence}}}}}}}
+\put(622,5354){\rotatebox{2.1}{\scalebox{1.00}{\makebox(0,0)[lb]{{{\tiogasetfont{}\textcolor[rgb]{0.72,0.52,0.04}{\fontsize{16}{16}\selectfont\textit{ Daniel Lecoanet, Mike McCourt, Eliot Quataert, & Ryan O'Leary}}}}}}}}
+\put(118,121){\scalebox{1.00}{\makebox(0,0)[lB]{{{\tiogasetfont{}\textcopyright\ authors 2016}\BS}}}}
+\put(7801,496){\scalebox{1.00}{\makebox(0,0)[rt]{{{\tiogasetfont{}\textcolor[rgb]{0.70,0.13,0.13}{\fontsize{20}{20}\selectfont\textbf{References}}}}}}}
+\put(7801,163){\scalebox{1.00}{\makebox(0,0)[rB]{{{\tiogasetfont{}\textcolor[rgb]{0.72,0.52,0.04}{\fontsize{12}{12}\selectfont \textit{Lecoanet, McCourt, Quataert, Burns, et al. (2007)}}}\BS}}}}
+\put(3844,5264){\rotatebox{1.4}{\scalebox{1.00}{\makebox(0,0)[rt]{{{\tiogasetfont{}\textcolor[rgb]{0.11,0.41,0.62}{\fontsize{18}{18}\selectfont\textbf{\textsc{Introduction}}}}}}}}}
+\put(156,5032){\scalebox{1.00}{\makebox(0,0)[lt]{{{\tiogasetfont{}\begin{minipage}{5.122655999999999in} \fontsize{10}{12}\selectfont A strange fact of fluid dynamics:
+    \textbf{fluids don't actually mix}.  The mixing we
+    observe---cream into coffee, dye into water---isn't due to
+    stirring alone, but to \textit{molecular diffusion,} a process
+    absent in the standard fluid equations.\\ 
+ \begin{wrapfigure}[8]{r}{7.3\baselineskip}
+           \vspace{-\baselineskip}%
+           \includegraphics[height=7.5\baselineskip]{figures/kh-1.png}
+           \end{wrapfigure} 
+From a fluid dynamics standpoint,
+    when you stir cream into your coffee, all you’re doing is folding
+    and stretching the different layers of fluid into thinner and
+    thinner sheets\ldots once the sheets get microscopically thin, the
+    fluid equations break down, diffusion takes over, and you finally
+    mix the two liquids.\\*[2ex] 
+ Most astrophysical simulations omit
+    diffusion entirely, so when we see ``mixing,'' it's  due to
+    \textbf{numerical errors}.  This raises an unsettling question:
+    \textit{are the beautiful structures in high-resolution
+    simulations real---or artifacts?} \end{minipage}}}}}}
+\put(3844,3290){\scalebox{1.00}{\makebox(0,0)[rt]{{{\tiogasetfont{}\textcolor[rgb]{0.11,0.41,0.62}{\fontsize{18}{18}\selectfont\textbf{\textsc{The Kelvin-Helmholtz Instability}}}}}}}}
+\put(156,2175){\scalebox{1.00}{\makebox(0,0)[lb]{{{\tiogasetfont{}\begin{minipage}{5.122655999999999in} \fontsize{10}{12}\selectfont \begin{wrapfigure}[8]{l}{11.3\baselineskip}
+           \vspace{-\baselineskip}%
+           \includegraphics[height=7.5\baselineskip]{figures/kelvin-highres.png}
+           \end{wrapfigure} 
+The
+    \textbf{\textit{Kelvin–Helmholtz instability}} (KH) arises when
+    two fluid layers slide past each other.  It produces iconic
+    rolling billows—seen in the sky, in oceans, and in countless
+    simulation papers.\\*[2ex] 
+ As resolution increases, KH
+    simulations often reveal intricate \textit{swirls-within-swirls,}
+    which are widely assumed to indicate numerical accuracy and
+    turbulence. \end{minipage}}}}}}
+\put(3844,1896){\scalebox{1.00}{\makebox(0,0)[rB]{{{\tiogasetfont{}\textcolor[rgb]{0.11,0.41,0.62}{\fontsize{18}{18}\selectfont\textbf{\textsc{Do These Swirls Converge?}}}}\BS}}}}
+\put(156,572){\scalebox{1.00}{\makebox(0,0)[lb]{{{\tiogasetfont{}\begin{minipage}{5.122655999999999in} \fontsize{10}{12}\selectfont \begin{wrapfigure}[10]{r}{16.8\baselineskip}
+           \vspace{-\baselineskip}%
+           \includegraphics[height=9.5\baselineskip]{figures/kelvin-highres-late.png}
+           \end{wrapfigure} 
+We investigated whether these simulations actually
+    \textit{converge} to a well-defined solution.  The result:
+    \textbf{they don't}.  Simulations with increasing resolution
+    produce \textbf{\textit{different answers, not better
+    ones}}---more swirls, more chaos, more discrepancy.\\*[2ex] 
+ You can often guess the
+    simulation's resolution by counting how many layers of swirls it
+    has. \end{minipage}}}}}}
+\put(7763,5415){\rotatebox{1.4}{\scalebox{1.00}{\makebox(0,0)[rt]{{{\tiogasetfont{}\textcolor[rgb]{0.11,0.41,0.62}{\fontsize{18}{18}\selectfont\textbf{\textsc{A Modified, Solvable Problem}}}}}}}}}
+\put(7763,5136){\scalebox{1.00}{\makebox(0,0)[rt]{{{\tiogasetfont{}\begin{minipage}{5.122655999999999in} \fontsize{10}{12}\selectfont We designed a slightly altered version of the KH
+    problem---one that includes a small but controlled amount of
+    diffusion.  This version has a well-defined solution, allowing us
+    to test convergence rigorously.\\*[2ex] 
+ The result was striking:
+    \textbf{the true solution has no such tiny swirls}. Even more surprising, the tiny
+    swirls are present in lower resolution, un-converged simulations,
+    but \textbf{disappear as we approach convergence!}\\ 
+ \hspace*{\fill}\includegraphics[width=4.268879999999999in]{figures/drat-early.png}\hspace*{\fill} \end{minipage}}}}}}
+\put(7763,3278){\scalebox{1.00}{\makebox(0,0)[rt]{{{\tiogasetfont{}\textcolor[rgb]{0.11,0.41,0.62}{\fontsize{18}{18}\selectfont\textbf{\textsc{Implications for Simulation Practice}}}}}}}}
+\put(4075,2999){\scalebox{1.00}{\makebox(0,0)[lt]{{{\tiogasetfont{}\begin{minipage}{5.122655999999999in} \fontsize{10}{12}\selectfont \begin{wrapfigure}[20]{l}{9.3\baselineskip}
+           \vspace{-\baselineskip}%
+           \includegraphics[height=19.5\baselineskip]{figures/nodiff.png}
+           \end{wrapfigure} 
+Astronomers often neglect diffusion
+    from their simulations because the true, physical scale for
+    diffusion is impossible to resolve.  We think that, by setting
+    diffusion to zero in our codes, we get the least amount of
+    diffusion.  However, this is not the case!\\*[2ex] 
+ Without any diffusion, the smallest
+    perturbations grow unchecked, generating swirls from
+    \textit{numerical noise, not physics}.  Including
+    diffusion---even at unrealistically high levels---\textbf{reduces
+    unphysical mixing} and produces more reliable results,
+    \textit{with \textbf{less} mixing}. \\*[1.5ex] 
+ It's better to have a controlled
+    approximation than uncontrolled chaos.\\*[1.5ex] 
+ \textbf{What's next?}  We're developing
+    benchmark tests and convergence criteria for mixing in
+    astrophysical simulations.\\*[1.5ex] 
+ This work cautions against interpreting small-scale structures as
+    signs of realism.  \textbf{Sometimes, a prettier picture is a
+    numerical mirage.}   \end{minipage}}}}}}
+\end{picture}

@@ -14,3 +14,5 @@ If you like, you can compile them using [TiogaRevival](https://github.com/mkmcc/
 ![outer parts poster](./OuterParts/outer-parts.png)
 
 ![gas clouds poster](./GasClouds/gas-clouds.png)
+
+![mixing](./Mixing/mixing.png)

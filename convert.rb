@@ -5,7 +5,8 @@ files = [
   './OuterParts/outer-parts.pdf',
   './ThermalInstability/thermal-instability.pdf',
   './BuoyancySaturation/buoyancy-saturation.pdf',
-  './GasClouds/gas-clouds.pdf'
+  './GasClouds/gas-clouds.pdf',
+  './Mixing/mixing.pdf'
 ]
 
 files.each do |file|
