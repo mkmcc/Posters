@@ -1,6 +1,6 @@
 # poster.rb: make a poster.
 #
-# Time-stamp: <2025-04-12 19:06:31 (mkmcc)>
+# Time-stamp: <2025-04-12 19:09:34 (mkmcc)>
 #
 # Style:
 #   1. the parameters in enter_page control the layout.  these are:
@@ -194,7 +194,7 @@ class MyPlots
     stroke_bdy([0, 1, 1,           0],
                [0, 0, 1+@bot_tilt, 1-@bot_tilt])
 
-    t.show_text('text'          => '\textcopyright\ authors 2013',
+    t.show_text('text'          => '\textcopyright\ authors 2017',
                 'at'            => [0.005, 0.1],
                 'alignment'     => ALIGNED_AT_BASELINE,
                 'justification' => LEFT_JUSTIFIED)
