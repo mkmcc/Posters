@@ -1,6 +1,6 @@
 # poster.rb: make a poster.
 #
-# Time-stamp: <2025-04-12 21:08:53 (mkmcc)>
+# Time-stamp: <2025-04-12 21:13:48 (mkmcc)>
 #
 # Style:
 #   1. the parameters in enter_page control the layout.  these are:
@@ -31,7 +31,7 @@ class MyPlots
 
     enter_page
 
-    t.autocleanup = false
+    # t.autocleanup = false
 
     t.tex_preview_preamble += \
     "\n\t\\usepackage[onlymath,medfamily,opticals]{MinionPro}\n"
@@ -159,7 +159,7 @@ class MyPlots
                 'justification' => LEFT_JUSTIFIED,
                 'color'         => @title_text_color)
 
-    authors = 'Daniel Lecoanet, Mike McCourt, Eliot Quataert, & Ryan O\'Leary'
+    authors = 'Daniel Lecoanet, Mike McCourt, Eliot Quataert, \& Ryan O\'Leary'
     authors = author_fmt(authors)
 
     t.show_text('text'          => authors,
