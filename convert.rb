@@ -4,7 +4,8 @@ res = 1200.0 / 11.0
 files = [
   './OuterParts/outer-parts.pdf',
   './ThermalInstability/thermal-instability.pdf',
-  './BuoyancySaturation/buoyancy-saturation.pdf'
+  './BuoyancySaturation/buoyancy-saturation.pdf',
+  './GasClouds/gas-clouds.pdf'
 ]
 
 files.each do |file|

@@ -12,3 +12,5 @@ If you like, you can compile them using [TiogaRevival](https://github.com/mkmcc/
 ![thermal instability poster](./ThermalInstability/thermal-instability.png)
 
 ![outer parts poster](./OuterParts/outer-parts.png)
+
+![gas clouds poster](./GasClouds/gas-clouds.png)
