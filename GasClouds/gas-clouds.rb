@@ -1,6 +1,6 @@
 # poster.rb: make a poster.
 #
-# Time-stamp: <2025-04-12 19:09:34 (mkmcc)>
+# Time-stamp: <2026-05-20 07:52:07 (mkmcc)>
 #
 # Style:
 #   1. the parameters in enter_page control the layout.  these are:
@@ -388,7 +388,7 @@ class MyPlots
     magnetohydrodynamic (\\textsc{mhd}) simulations and found a
     striking result: even \\textit{weak magnetic fields} can stabilize
     the cloud, suppressing its disruption and extending its lifetime.
-    This helps explain why G2 remained intact longer than expected—and
+    This helps explain why G2 remained intact longer than expected--and
     reduces the need to revise estimates of gas density in the
     galactic center."
 
@@ -433,7 +433,7 @@ class MyPlots
     accounts for: \\begin{itemize}[leftmargin=*,itemsep=-1ex,] \\item
     \\textit{Magnetically enhanced drag,} acting between the cloud and
     the rotating medium \\item \\textit{Orbital precession,} as the
-    plane of G2’s orbit twists to align with the accretion flow \\item
+    plane of G2's orbit twists to align with the accretion flow \\item
     The cloud's evolution across \\textit{multiple pericenter
     passages} \\end{itemize}"
 
@@ -523,7 +523,7 @@ class MyPlots
     \\end{itemize}"
 
     example_text = example_text + "Our model matches the full 3D orbit
-    and velocity evolution of both G1 and G2—including the
+    and velocity evolution of both G1 and G2--including the
     \\textit{twisting of the orbital plane} and the observed
     \\textit{orbital energy difference} between the clouds."
 
